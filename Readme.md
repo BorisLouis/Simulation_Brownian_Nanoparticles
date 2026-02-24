@@ -7,6 +7,7 @@ Simulates fluorescent particles undergoing Brownian motion and generates synthet
 4) Save as 16-bit grayscale TIFF (ImageJ-compatible)
 
 *How to use*
+
 1)Connect to GPU runtime in google colab
 2)Change REPO_DIR to desired path in your google drive
 3)Change parameters in section 2 according to desired simulation
