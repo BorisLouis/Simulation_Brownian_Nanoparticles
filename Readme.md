@@ -9,8 +9,13 @@ Simulates fluorescent particles undergoing Brownian motion and generates synthet
 *How to use*
 
 1)Connect to GPU runtime in google colab
+
 2)Change REPO_DIR to desired path in your google drive
+
 3)Change parameters in section 2 according to desired simulation
+
 4)Press run all
+
 5)Allow access to google drive
+
 6)Results (Simulated Movie + simulated particles traces) will be stored at REPO_DIR/Results
