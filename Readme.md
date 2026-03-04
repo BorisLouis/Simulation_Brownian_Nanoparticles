@@ -19,3 +19,7 @@ Simulates fluorescent particles undergoing Brownian motion and generates synthet
 5)Allow access to google drive
 
 6)Results (Simulated Movie + simulated particles traces) will be stored at REPO_DIR/Results
+
+
+
+Remark: The objects are simulated as dimensionless (1 single bright pixel to which a PSF is convolved), hence if the dimensions chosen of the object are not realistic (e.g. 1um particles), the diffusion dynamic will be properly simulated but the images would look like a diffraction limited object movie slow.
