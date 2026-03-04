@@ -1,0 +1,31 @@
+# Microscope
+LAMBDA        = 0.532e-6   # emission wavelength [m]
+NA            = 1.2        # numerical aperture
+N_MEDIUM      = 1.33       # refractive index (water)
+PIXEL_SIZE_HR = 25e-9      # oversampled pixel size [m]
+PIXEL_SIZE_LR = 100e-9     # camera pixel size [m]
+UPSAMPLE      = 4          # binning factor
+N_PIX_HR      = 512
+N_PIX_LR      = N_PIX_HR // UPSAMPLE   # = 256
+
+# Physics  (Stokes-Einstein: D = kT / 6πηr)
+K_B           = 1.380649e-23  # [J/K]
+TEMPERATURE   = 298.0         # [K]
+VISCOSITY     = 1e-3        # [Pa·s]  (1e-3 ~ water @ 25°C)
+RADIUS        = 100e-9         # hydrodynamic radius [m]
+
+# Simulation
+N_FRAMES      = 500
+DT            = 0.03          # frame interval [s]
+CONCENTRATION = 50  # particles in FOV
+Z_RANGE       = 1.25e-6          # ± Z half-range [m]
+
+N_PIX_Z = int(2*Z_RANGE/PIXEL_SIZE_HR)
+
+# Detector noise
+PHOTON_SCALE  = 500     # peak photons / particle / frame
+READ_NOISE_SD = 20        # read-out noise [photon-equiv.]
+BACKGROUND = 100 #detector background, mostly for added noise
+# Derived
+D_COEFF  = K_B * TEMPERATURE / (6 * np.pi * VISCOSITY * RADIUS)
+FOV_SIZE = N_PIX_HR * PIXEL_SIZE_HR
