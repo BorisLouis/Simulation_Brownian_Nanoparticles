@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the repository
+  using its Zenodo DOI and the associated paper listed below.
+type: software
+title: "Simulation_Brownian_Nanoparticles"
+authors:
+  - family-names: "Louis"
+    given-names: "Boris"
+repository-code: "https://github.com/BorisLouis/Simulation_Brownian_Nanoparticles"
+
+# Uncomment and fill these when available:
+# version: "1.0.0"
+# date-released: "YYYY-MM-DD"
+# doi: "YOUR ZENODO DOI"
+
+references:
+  - type: article
+    title: >-
+      Quantitative Analysis of Cytoplasmic Viscosity in
+      Colorectal Cancer Cells by Differential Dynamic
+      Microscopy of Genetically Encoded Nanoparticles
+    authors:
+      - family-names: "Huysecom"
+        given-names: "Steven"
+      - family-names: "Schouwstra"
+        given-names: "Kiki"
+      - family-names: "Aytekin"
+        given-names: "Samet"
+      - family-names: "Neyrinck"
+        given-names: "Natalie"
+      - family-names: "Heyvaert"
+        given-names: "Yana"
+      - family-names: "Louis"
+        given-names: "Boris"
+      - family-names: "Rocha"
+        given-names: "Susana"
+      - family-names: "Solís-Fernandez"
+        given-names: "Guillermo"
+    journal: "Chemical & Biomedical Imaging"
+    year: 2026
+    month: 4
+    doi: "10.1021/cbmi.5c00261"
